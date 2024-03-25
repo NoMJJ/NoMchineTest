@@ -10,19 +10,13 @@ runNode=0
 unrNode=0
 failNode=0
 stopedNode=0
- 
 
 while read nodeLine; do
 
-
     stat1=$(echo "$nodeLine" | grep -c "running")
-
     echo "$stat1"
-
     runNode=$((runNode + stat1))
- 
     stat2=$(echo "$nodeLine" | grep -c "unreachable")
-
     echo "$stat2"
 
     unrNode=$((unrNode + stat2))
