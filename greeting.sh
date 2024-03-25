@@ -1,4 +1,6 @@
 # Function to display help information
+#what should this functionds do§
+
 display_help() {
     echo "Usage: ./greeting_with_options.sh [options]"
     echo "Options:"
