@@ -7,7 +7,9 @@ sum4=0
 
 while read nodeLine; do
 
-    #summen  nodes
+    #Alen
+    # Edited comment 
+    # Sum of the stats of numbe of different types of connections
 
     stat1=`echo $nodeLine | cut -d "/" -f1`; 
     echo $stat1; 

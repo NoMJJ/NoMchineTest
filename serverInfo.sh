@@ -1,6 +1,7 @@
 serverInfo=$(grep running nodeList.txt| awk '{print $1}')
 
 ipAddress="10.64.251.22"
+# Alen added comment 
 
 for sName in $serverInfo; do 
 	ssh nomachine@$ipAddress sudo /etc/NX/nxserver --nodeinfo $sName > savedServerInfo.txt
