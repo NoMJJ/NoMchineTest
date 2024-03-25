@@ -7,6 +7,8 @@ sum4=0
 
 while read nodeLine; do
 
+    #summen  nodes
+
     stat1=`echo $nodeLine | cut -d "/" -f1`; 
     echo $stat1; 
     sum1=$((sum1 + stat1));
